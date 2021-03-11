@@ -2,30 +2,6 @@
   height: 100%;
   background: url('../img/hero-bg.png') no-repeat 50% / cover;
 
-  // .header {
-  //   padding: 51px 0 94px;
-  //   .navigation {
-  //     .menu {
-  //       display: flex;
-  //       align-items: center;
-  //       & > * + * {
-  //         margin-left: 30px;
-  //       }
-  //       &__link {
-  //         text-transform: uppercase;
-  //         color: white;
-  //         font-size: 18px;
-  //         line-height: 25px;
-  //         font-weight: 600;
-  //       }
-  //       &__item {
-  //         &:nth-child(1) {
-  //           margin-right: 50px;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
   &__content {
     color: white;
     .box-content {
@@ -36,21 +12,32 @@
     }
     .title {
       font-weight: 700;
-      font-size: 64px;
+      font-size: 32px;
       line-height: 89px;
+      @media (min-width: 768px) {
+        font-size: 64px;
+      }
     }
     .subtitle {
       margin-bottom: 30px;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 28px;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
     }
     .description {
-      width: 43%;
+      width: 100%;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 149.8%;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
+      @media (min-width: 1280px) {
+        width: 43%;
+        font-size: 18px;
+        margin-bottom: 100px;
+      }
     }
     .social {
       position: relative;
@@ -93,7 +80,11 @@
       display: flex;
       align-items: center;
       & > * + * {
-        margin-left: 30px;
+        margin-top: 30px;
+        @media (min-width: 991px) {
+          margin-top: 0;
+          margin-left: 30px;
+        }
       }
       &__link {
         text-transform: uppercase;
@@ -102,11 +93,33 @@
         line-height: 25px;
         font-weight: 600;
       }
-      &__item {
-        &:nth-child(1) {
-          margin-right: 50px;
-        }
-      }
     }
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all 0.5s;
+    text-decoration: none;
+  }
+
+  nav.stroke ul li a {
+    position: relative;
+  }
+
+  nav.stroke ul li a:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: #ff1640;
+    height: 3px;
+  }
+
+  nav.stroke ul li a:hover:after {
+    width: 100%;
   }
 }

@@ -12,32 +12,34 @@
   <section class="power-supply-block">
     <header class="header">
       <div class="re-wrapper re-wrapper--response">
-          <nav class="navigation">
-              <ul class="menu">
-                <li class="menu__item">
-                    <a href="#header" class="menu__link menu__link logo">
-                        <img src="./assets/img/logo.svg" alt=""></a>
-                </li>
-                  <li class="menu__item">
-                      <a href="index.html" class="menu__link menu__link">Головна</a>
-                  </li>
-                  <li class="menu__item">
-                      <a href="gallery.html" class="menu__link">Галерея</a>
-                  </li>
-                  <li class="menu__item">
-                      <a href="about.html" class="menu__link">Про себе</a>
-                  </li>
-              </ul>
-          </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark navigation stroke">
+          <a class="navbar-brand" href="#"><img src="./assets/img/logo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav menu">
+              <li class="nav-item active menu__item">
+                  <a href="index.html" class="menu__link menu__link">Головна</a>
+              </li>
+              <li class="nav-item menu__item">
+                  <a href="gallery.html" class="menu__link">Галерея</a>
+              </li>
+              <li class="nav-item menu__item">
+                  <a href="about.html" class="menu__link">Про себе</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
   
       </div>
   </header>
     <div class="re-wrapper">
       <div class="re-power-supply__block">
         <div class="power-supply-block__box-title">
-          <div class="power-supply-block__image-title">
-            <img src="assets/img/gallery5.jpg" alt="" width="100%">
-          </div>
+          <!-- <div class="power-supply-block__image-title">
+            <img src="assets/img/gallery5.jpg" alt="">
+          </div> -->
           <h2 class="power-supply-block__title">
             Олександр Сень
           </h2>
@@ -100,8 +102,9 @@
     </div>
 </footer>
 
-<!-- <script src="./assets/js/components/accordeon.js"></script>
-<script src="./assets/js/components/power-supply-block.js"></script> -->
 <script src="assets/js/common.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

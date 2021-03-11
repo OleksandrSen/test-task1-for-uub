@@ -1,9 +1,23 @@
 .footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   background: url('../img/footer-bg.png') no-repeat 50% / cover;
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 40px 10px;
+  padding: 75px 40px 10px;
+  @media (min-width: 1280px) {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: unset;
+    padding-top: 40px;
+  }
+  & > * + * {
+    margin-top: 30px;
+    @media (min-width: 1280px) {
+      margin-top: 0;
+    }
+  }
 
   &__social {
     color: #ffffff;
@@ -15,6 +29,24 @@
       &:hover {
         transform: scale(1.2);
         transition: all 0.5s ease;
+      }
+    }
+    .copyright {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (min-width: 1280px) {
+        flex-direction: row;
+      }
+      p {
+        margin: 0;
+      }
+      & > * + * {
+        margin-top: 20px;
+        @media (min-width: 1280px) {
+          margin-top: 0;
+          margin-left: 20px;
+        }
       }
     }
   }
