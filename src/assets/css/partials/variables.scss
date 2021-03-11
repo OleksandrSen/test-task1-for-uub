@@ -1,0 +1,11 @@
+$mainfont: HelveticaNeueCyr;
+
+@include font('HelveticaNeueCyr', 'HelveticaNeueCyr-Roman', '400', normal);
+@include font('HelveticaNeueCyr', 'HelveticaNeueCyr-Bold', '700', normal);
+@include font('HelveticaNeueCyr', 'HelveticaNeueCyr-Black', '900', normal);
+
+$font-title: 'Marmelad', sans-serif;
+$font: 'Raleway', sans-serif;
+$grey: #b9b9b9;
+$red: #ff6833;
+$blue: #5585a2;

@@ -1,0 +1,15 @@
+.re-wrapper {
+  width: 100%;
+  max-width: 994px;
+  margin: 0 auto;
+  margin: 0 auto;
+  @include adaptive('padding-left', 1920, 768, 80, 30);
+  @include adaptive('padding-right', 1920, 768, 80, 30);
+  @media screen and (max-width: 768px) {
+    @include adaptive('padding-left', 768, 320, 30, 20);
+    @include adaptive('padding-right', 768, 320, 30, 20);
+  }
+  &--response {
+    max-width: 1282px;
+  }
+}

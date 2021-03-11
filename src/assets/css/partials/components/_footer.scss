@@ -1,0 +1,21 @@
+.footer {
+  height: 100%;
+  background: url('../img/footer-bg.png') no-repeat 50% / cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px 10px;
+
+  &__social {
+    color: #ffffff;
+    & > * {
+      margin: 10px 0 10px 10px;
+    }
+    &-icon {
+      transition: all 0.5s ease;
+      &:hover {
+        transform: scale(1.2);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}

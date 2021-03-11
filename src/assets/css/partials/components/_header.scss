@@ -1,0 +1,112 @@
+.hero-block {
+  height: 100%;
+  background: url('../img/hero-bg.png') no-repeat 50% / cover;
+
+  // .header {
+  //   padding: 51px 0 94px;
+  //   .navigation {
+  //     .menu {
+  //       display: flex;
+  //       align-items: center;
+  //       & > * + * {
+  //         margin-left: 30px;
+  //       }
+  //       &__link {
+  //         text-transform: uppercase;
+  //         color: white;
+  //         font-size: 18px;
+  //         line-height: 25px;
+  //         font-weight: 600;
+  //       }
+  //       &__item {
+  //         &:nth-child(1) {
+  //           margin-right: 50px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  &__content {
+    color: white;
+    .box-content {
+      padding-top: 76px;
+      background: rgba(#2d2828, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: -15px 0px 15px rgba(0, 0, 0, 0.3);
+    }
+    .title {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 89px;
+    }
+    .subtitle {
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+    }
+    .description {
+      width: 43%;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 149.8%;
+      margin-bottom: 100px;
+    }
+    .social {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      & > * + * {
+        margin-left: 70px;
+      }
+      height: 100px;
+      &__logo {
+        width: 90px;
+        transform: translateY(40%);
+        img {
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s ease;
+        }
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.5s ease;
+        }
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.342);
+      }
+    }
+  }
+}
+
+.header {
+  padding: 51px 0 70px;
+  .navigation {
+    .menu {
+      display: flex;
+      align-items: center;
+      & > * + * {
+        margin-left: 30px;
+      }
+      &__link {
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 600;
+      }
+      &__item {
+        &:nth-child(1) {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+}

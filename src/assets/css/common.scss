@@ -1,0 +1,12 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+// @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap%27');
+@import 'partials/reset';
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/global';
+@import 'partials/components/main';
+@import 'partials/components/header';
+@import 'partials/components/gallery';
+@import 'partials/components/footer';
+@import 'partials/components/power-supply-block';
+@import 'partials/components/popup-xsense.scss';
