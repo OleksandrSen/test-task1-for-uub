@@ -9,7 +9,12 @@
   }
 
   &__image-title {
-    width: 150px;
+    width: 120px;
+    height: 120px;
+
+    img {
+      width: 100%;
+    }
   }
 
   &__box-title {
